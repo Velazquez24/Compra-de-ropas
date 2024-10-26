@@ -18,15 +18,15 @@ class Producto(ABC):
     
 class Camisa(Producto):
     def mostrarinfo(self):
-        print(f'Camisa: {self._nombre}, Precio: ${self._precio:.2f}')
+        print(f'Camisa: {self._nombre}, Precio: ₲{self._precio:.2f}')
 
 class Pantalon(Producto):
     def mostrarinfo(self):
-        print(f'Pantalón: {self._nombre}, Precio: ${self._precio:.2f}')
+        print(f'Pantalón: {self._nombre}, Precio: ₲{self._precio:.2f}')
 
 class Zapato(Producto):
     def mostrarinfo(self):
-        print(f'Zapato: {self._nombre}, Precio: ${self._precio:.2f}')
+        print(f'Zapato: {self._nombre}, Precio: ₲{self._precio:.2f}')
 
 class Categoria:
     def __init__(self, nombre):
